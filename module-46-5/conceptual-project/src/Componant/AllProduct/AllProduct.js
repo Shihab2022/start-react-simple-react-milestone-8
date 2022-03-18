@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleProduct from '../SingleProduct/SingleProduct';
 
-const AllProduct = () => {
+const AllProduct = ({setData,deleteData}) => {
     const [products,setProducts]=useState([])
     
     useEffect(() =>{ 
@@ -15,7 +15,7 @@ const AllProduct = () => {
        <h1>All product</h1>
        <div class="row row-cols-1 container mt-3 row-cols-md-3 g-4">
        {
-           products.map(product =><SingleProduct product={product} ></SingleProduct>)
+           products.map(product =><SingleProduct product={product} setData={setData}     key={product.id} deleteData={deleteData}></SingleProduct>)
        }
            </div>
 
