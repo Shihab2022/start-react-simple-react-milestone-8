@@ -1,5 +1,6 @@
 import './App.css';
-import Cosmetics from './Componant/Cosmetic/Cosmetics';
+import LocalStorageClick from './Componant/LocalStorage/LocalStorageClick';
+// import Cosmetics from './Componant/Cosmetic/Cosmetics';
 // import Data from './Componant/Data/Data';
 // import Default from './Componant/Default/Default';
 
@@ -9,8 +10,8 @@ function App() {
    <h1>hello world</h1>
 {/* <Default></Default>
 <Data></Data> */}
-
-<Cosmetics></Cosmetics>
+{/* <Cosmetics></Cosmetics> */}
+<LocalStorageClick></LocalStorageClick>
     </div>
   );
 }

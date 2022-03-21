@@ -1,0 +1,15 @@
+.card{
+    border:5px solid rgb(173, 95, 64);
+    margin:10px;
+    padding:5px;
+    border-radius: 15px;
+    
+}
+.card button{
+    padding:10px 20px;
+    background-color:blueviolet;
+    margin:4px 2px;
+    border-radius: 10px;
+    border:none;
+    color:white;
+}
