@@ -1,5 +1,6 @@
 import './App.css';
-import LocalStorageClick from './Componant/LocalStorage/LocalStorageClick';
+import Reduce from './Componant/Reduce/Reduce';
+// import LocalStorageClick from './Componant/LocalStorage/LocalStorageClick';
 // import Cosmetics from './Componant/Cosmetic/Cosmetics';
 // import Data from './Componant/Data/Data';
 // import Default from './Componant/Default/Default';
@@ -11,7 +12,8 @@ function App() {
 {/* <Default></Default>
 <Data></Data> */}
 {/* <Cosmetics></Cosmetics> */}
-<LocalStorageClick></LocalStorageClick>
+{/* <LocalStorageClick></LocalStorageClick> */}
+<Reduce></Reduce>
     </div>
   );
 }
