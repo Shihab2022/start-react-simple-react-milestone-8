@@ -58,4 +58,43 @@ localStorage.setItem('name',JSON.stringify(db))
 
 //akdik value dity chily console ay trial dakty pari */
 
-/*************************module 50-5-1***************************************/
+/*************************module 50-5-3***************************************/
+
+//ay vaby add korly browser reload dily new value gulo old vlue gulo kay over right kory faly jar foly ager data gulo thKY na
+
+const db={}
+
+const addToDb=item=>{
+
+    //for set previous data
+    const storedTracker =localStorage.getItem('name')
+    if(storedTracker){
+        db=JSON.parse(storedTracker);
+    }
+
+    if(item in db){
+        db[item] =db[item]+1;
+    }
+    else{
+        db[item] =1
+    }
+    console.log(db)
+    localStorage.setItem('name',JSON.stringify(db))
+}
+addToDb('shihab')
+
+/*************************remove data from local storage***************************************/
+
+const removeFromLocalStorage=(item)=>{
+    const storedTracker=localStorage.getItem('name')
+    if(storedTracker){
+        const storedObject= JSON.parse(storedTracker)
+        delete storedObject[item]
+        localStorage.setItem('name',JSON.stringify(storedObject))
+    }
+}
+removeFromLocalStorage('shihab')
+
+
+
+
